@@ -1,0 +1,18 @@
+{
+  "name": "sim-check",
+  "main": "./lib/main",
+  "version": "0.0.1",
+  "description": "A grammar checker that dynamically highlights mistakes",
+  "keywords": [],
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "repository": "https://github.com/sirenard/atom-grammar-check",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "gingerbread": ">=0.4.x"
+  }
+}
