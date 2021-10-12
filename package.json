@@ -14,5 +14,16 @@
   },
   "dependencies": {
     "gingerbread": ">=0.4.x"
+  },
+  "configSchema": {
+    "excludedScopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": ["support.function.tex"," meta.preamble.latex"," support.type.function.latex"," comment.line.percentage.tex"," storage.type.function.latex"," support.function.latex"," string.other.math.tex"," string.other.math.block.environment.latex"," variable.parameter.function.latex"," constant.other.reference.latex"],
+      "description": "List of sub-scopes that will be ignored. Specify the most detailed scope to avoid ignoring otherwise relevant text. The scopes will be parsed as regular expressions. See [the README](https://github.com/atom/spell-check#spell-check-package-) for more information on finding the correct scope for a specific language.",
+      "order": 2
+    }
   }
 }
