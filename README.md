@@ -1,6 +1,6 @@
 # atom-grammar-check
 
-This atom plugin highlight the syntax and spell mistakes in your editor.
+This atom plugin highlights the syntax and spell mistakes in your editor.
 
 ![Small illustration](ressources/demo.png)
 
@@ -8,10 +8,12 @@ This atom plugin highlight the syntax and spell mistakes in your editor.
 
 * Highlight english mistakes
 * Suggest replacing text
+* Support excluded range (stolen from [spell-check](https://github.com/atom/spell-check) module)
 
 ## ToDO:
 
-* Take in account the scope (do not correct text of given scopes) (like in spell-check package)
 * Optimization?
-* Take in account the file type (do not correct for given file types)
+* Take in account the file type (do not correct some given file types)
 * On/Off toggle
+* Other language support
+* Offline support (currently using ginger via gingerbread module)
