@@ -1,7 +1,7 @@
 {
   "name": "grammar-check",
   "main": "./lib/main",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An english grammar checker that dynamically highlights mistakes and proposes a correction",
   "keywords": [],
   "activationHooks": [
