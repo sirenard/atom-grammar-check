@@ -20,7 +20,7 @@
     "usedCorrecter": {
       "type": "string",
       "default": "ginger",
-      "description": "Choose wich corrector must be used (reload atom to apply)",
+      "description": "Choose which corrector must be used",
       "order": 1,
       "enum": [
         {
@@ -32,6 +32,219 @@
           "description": "ginger"
         }
       ]
+    },
+
+
+    "language": {
+      "type": "string",
+      "default": "auto",
+      "description": "Choose which language languagetool will use use",
+      "order": 2,
+      "enum": [
+        {
+          "value": "auto",
+          "description": "auto"
+        },
+        {
+          "value": "ar",
+          "description": "Arabic"
+        },
+        {
+          "value": "ast-ES",
+          "description": "Asturian"
+        },
+        {
+          "value": "be-BY",
+          "description": "Belarusian"
+        },
+        {
+          "value": "br-FR",
+          "description": "Breton"
+        },
+        {
+          "value": "ca-ES",
+          "description": "Catalan"
+        },
+        {
+          "value": "ca-ES-valencia",
+          "description": "Catalan (Valencian)"
+        },
+        {
+          "value": "zh-CN",
+          "description": "Chinese"
+        },
+        {
+          "value": "da-DK",
+          "description": "Danish"
+        },
+        {
+          "value": "nl",
+          "description": "Dutch"
+        },
+        {
+          "value": "nl-BE",
+          "description": "Dutch (Belgium)"
+        },
+        {
+          "value": "en",
+          "description": "English"
+        },
+        {
+          "value": "en-AU",
+          "description": "English (Australian)"
+        },
+        {
+          "value": "en-CA",
+          "description": "English (Canadian)"
+        },
+        {
+          "value": "en-GB",
+          "description": "English (GB)"
+        },
+        {
+          "value": "en-NZ",
+          "description": "English (New Zealand)"
+        },
+        {
+          "value": "en-ZA",
+          "description": "English (South African)"
+        },
+        {
+          "value": "en-US",
+          "description": "English (US)"
+        },
+        {
+          "value": "eo",
+          "description": "Esperanto"
+        },
+        {
+          "value": "fr",
+          "description": "French"
+        },
+        {
+          "value": "gl-ES",
+          "description": "Galician"
+        },
+        {
+          "value": "de",
+          "description": "German"
+        },
+        {
+          "value": "de-AT",
+          "description": "German (Austria)"
+        },
+        {
+          "value": "de-DE",
+          "description": "German (Germany)"
+        },
+        {
+          "value": "de-CH",
+          "description": "German (Swiss)"
+        },
+        {
+          "value": "el-GR",
+          "description": "Greek"
+        },
+        {
+          "value": "ga-IE",
+          "description": "Irish"
+        },
+        {
+          "value": "it",
+          "description": "Italian"
+        },
+        {
+          "value": "ja-JP",
+          "description": "Japanese"
+        },
+        {
+          "value": "km-KH",
+          "description": "Khmer"
+        },
+        {
+          "value": "nb",
+          "description": "Norwegian (Bokmål)"
+        },
+        {
+          "value": "fa",
+          "description": "Persian"
+        },
+        {
+          "value": "pl-PL",
+          "description": "Polish"
+        },
+        {
+          "value": "pt",
+          "description": "Portuguese"
+        },
+        {
+          "value": "pt-AO",
+          "description": "Portuguese (Angola preAO)"
+        },
+        {
+          "value": "pt-BR",
+          "description": "Portuguese (Brazil)"
+        },
+        {
+          "value": "pt-MZ",
+          "description": "Portuguese (Moçambique preAO)"
+        },
+        {
+          "value": "pt-PT",
+          "description": "Portuguese (Portugal)"
+        },
+        {
+          "value": "ro-RO",
+          "description": "Romanian"
+        },
+        {
+          "value": "ru-RU",
+          "description": "Russian"
+        },
+        {
+          "value": "de-DE-x-simple-language",
+          "description": "Simple German"
+        },
+        {
+          "value": "sk-SK",
+          "description": "Slovak"
+        },
+        {
+          "value": "sl-SI",
+          "description": "Slovenian"
+        },
+        {
+          "value": "es",
+          "description": "Spanish"
+        },
+        {
+          "value": "es-AR",
+          "description": "Spanish (voseo)"
+        },
+        {
+          "value": "sv",
+          "description": "Swedish"
+        },
+        {
+          "value": "tl-PH",
+          "description": "Tagalog"
+        },
+        {
+          "value": "ta-IN",
+          "description": "Tamil"
+        },
+        {
+          "value": "uk-UA",
+          "description": "Ukrainian"
+        }
+      ]
+    },
+
+    "languagetoolUrl": {
+      "type": "string",
+      "default": "http://localhost:8081",
+      "description": "URL of the language tool server. It's better to have a local language tool server ([see here](https://dev.languagetool.org/http-server.html)) due to the big amount of requests",
+      "order": 3
     },
 
     "excludedScopes": {
@@ -53,7 +266,7 @@
         "punctuation"
       ],
       "description": "List of sub-scopes that will be ignored. Specify the most detailed scope to avoid ignoring otherwise relevant text. The scopes will be parsed as regular expressions. See [the README](https://github.com/atom/spell-check#spell-check-package-) for more information on finding the correct scope for a specific language.",
-      "order": 2
+      "order": 4
     }
   }
 }
