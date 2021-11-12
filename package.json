@@ -17,6 +17,23 @@
     "async-mutex": ">=0.3.x"
   },
   "configSchema": {
+    "usedCorrecter": {
+      "type": "string",
+      "default": "ginger",
+      "description": "Choose wich corrector must be used (reload atom to apply)",
+      "order": 1,
+      "enum": [
+        {
+          "value": "languagetool",
+          "description": "languagetool"
+        },
+        {
+          "value": "ginger",
+          "description": "ginger"
+        }
+      ]
+    },
+
     "excludedScopes": {
       "type": "array",
       "items": {
