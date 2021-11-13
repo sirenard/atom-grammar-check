@@ -1,7 +1,7 @@
 {
   "name": "grammar-check",
   "main": "./lib/main",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A multilingual grammar checker that dynamically highlights mistakes and proposes a correction",
   "keywords": [],
   "activationHooks": [
@@ -33,8 +33,6 @@
         }
       ]
     },
-
-
     "language": {
       "type": "string",
       "default": "auto",
@@ -239,14 +237,12 @@
         }
       ]
     },
-
     "languagetoolUrl": {
       "type": "string",
       "default": "http://localhost:8081",
       "description": "URL of the language tool server. It's better to have a local language tool server ([see here](https://dev.languagetool.org/http-server.html)) due to the big amount of requests",
       "order": 3
     },
-
     "excludedScopes": {
       "type": "array",
       "items": {
@@ -268,7 +264,6 @@
       "description": "List of sub-scopes that will be ignored. Specify the most detailed scope to avoid ignoring otherwise relevant text. The scopes will be parsed as regular expressions. See [the README](https://github.com/atom/spell-check#spell-check-package-) for more information on finding the correct scope for a specific language.",
       "order": 4
     },
-
     "languageToolStartServerCommand": {
       "type": "string",
       "default": "java -cp languagetool-server.jar org.languagetool.server.HTTPServer --port 8081",
