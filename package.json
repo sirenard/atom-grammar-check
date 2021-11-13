@@ -3,7 +3,12 @@
   "main": "./lib/main",
   "version": "0.2.0",
   "description": "A multilingual grammar checker that dynamically highlights mistakes and proposes a correction",
-  "keywords": [],
+  "author": "Renard Simon",
+  "keywords": [
+    "spellchecker",
+    "grammar",
+    "orthographic"
+  ],
   "activationHooks": [
     "core:loaded-shell-environment"
   ],
