@@ -2,7 +2,7 @@
   "name": "grammar-check",
   "main": "./lib/main",
   "version": "0.1.0",
-  "description": "An english grammar checker that dynamically highlights mistakes and proposes a correction",
+  "description": "A multilingual grammar checker that dynamically highlights mistakes and proposes a correction",
   "keywords": [],
   "activationHooks": [
     "core:loaded-shell-environment"
@@ -267,6 +267,13 @@
       ],
       "description": "List of sub-scopes that will be ignored. Specify the most detailed scope to avoid ignoring otherwise relevant text. The scopes will be parsed as regular expressions. See [the README](https://github.com/atom/spell-check#spell-check-package-) for more information on finding the correct scope for a specific language.",
       "order": 4
+    },
+
+    "languageToolStartServerCommand": {
+      "type": "string",
+      "default": "java -cp languagetool-server.jar org.languagetool.server.HTTPServer --port 8081",
+      "description": "If a local server is used, this command will be executed at startup to start the server more information on local server [here](https://dev.languagetool.org/http-server.html).",
+      "order": 5
     }
   }
 }
