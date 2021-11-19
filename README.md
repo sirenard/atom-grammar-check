@@ -23,11 +23,10 @@ There is 2 modules implemented:
 If you use a local languagetool server (see [here](https://dev.languagetool.org/http-server.html) to install your own),
 you can give in option a command line that will be executed when the package is activated to try to start the server.
 
-Be careful, when atom is closed, the server is not shut downed, thus it steels use about 700 MiB of memory.
+You can add in package option *Language Tool Stop Server Command* a command that shut down the server when the package is disabled.
 
 ## ToDO:
 
 * Optimization?
 * Take in account the file type (do not correct some givens file types)
 * On/Off toggle
-* Smart shutdown of languagetool server
