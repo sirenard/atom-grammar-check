@@ -1,7 +1,7 @@
 {
   "name": "grammar-check",
   "main": "./lib/main",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A multilingual grammar checker that dynamically highlights mistakes and proposes a correction",
   "author": "Renard Simon",
   "keywords": [
