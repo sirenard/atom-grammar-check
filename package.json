@@ -254,34 +254,41 @@
         "type": "string"
       },
       "default": [
-        "support.functort.functiion.tex",
-        "support.function.general.tex",
-        "meta.preamble.latex",
-        "meta.function",
-        "support.type.function.latex",
-        "comment.line.percentage.tex",
-        "storage.type.function.latex",
-        "suppon.latex",
+        "meta.reference.latex",
         "string.other.math.tex",
-        "string.other.math.block.environment.latex",
-        "variable.parameter.function.latex",
-        "constant.other.reference.latex",
-        "punctuation"
+        "variable.parameter.*",
+        "keyword.*",
+        "support.*",
+        "meta.function.environment.*",
+        "punctuation.*",
+        "markup.raw.verbatim.latex"
       ],
-      "description": "List of sub-scopes that will be ignored. Specify the most detailed scope to avoid ignoring otherwise relevant text. The scopes will be parsed as regular expressions. See [the README](https://github.com/atom/spell-check#spell-check-package-) for more information on finding the correct scope for a specific language.",
+      "description": "List of sub-scopes that will be ignored. The scopes will be parsed as regular expressions.",
       "order": 4
+    },
+    "includedScopes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "text.tex.latex",
+        ".*comment.*"
+      ],
+      "description": "List of sub-scopes that are allowed to be checked. The scopes will be parsed as regular expressions.",
+      "order": 5
     },
     "languageToolStartServerCommand": {
       "type": "string",
       "default": "java -cp ./LanguageTool-5.5/languagetool-server.jar org.languagetool.server.HTTPServer --port 8081",
       "description": "If a local server is used, this command will be executed at startup to start the server more information on local server [here](https://dev.languagetool.org/http-server.html).",
-      "order": 5
+      "order": 6
     },
     "languageToolStopServerCommand": {
       "type": "string",
       "default": "myCommand=\"java -cp ./LanguageTool-5.5/languagetool-server.jar org.languagetool.server.HTTPServer --port 8081\";ps -ax | grep \"$myCommand\" | while read -r line; do kill $(echo $line | cut -d ' ' -f1) 2> /dev/null; done",
       "description": "If a local server is used, this command will be executed when the package is deactivated. The default value works on linux, you just have to change on the first instruction the variable `myCommand` and set it with the command that you execute to start the server. The command looks for the process and kill it ",
-      "order": 6
+      "order": 7
     }
   }
 }
