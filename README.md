@@ -8,7 +8,7 @@ This atom plugin highlights the syntax and spell mistakes in your editor.
 
 * Highlight mistakes
 * Suggest replacing text
-* Highlight only text in specific scopes (see [here](Scopes))
+* Highlight only text in specific scopes (see [here](#scopes))
 
 ## Correcter modules
 
