@@ -8,7 +8,7 @@ This atom plugin highlights the syntax and spell mistakes in your editor.
 
 * Highlight mistakes
 * Suggest replacing text
-* Support excluded range (stolen from [spell-check](https://github.com/atom/spell-check) module)
+* Highlight only text in specific scopes (see [here](Scopes))
 
 ## Correcter modules
 
@@ -25,8 +25,15 @@ you can give in option a command line that will be executed when the package is 
 
 You can add in package option *Language Tool Stop Server Command* a command that shut down the server when the package is disabled.
 
+## Scopes
+
+In the parameters, there are 2 fields (*Excluded Scopes* and *Included Scopes*)for the scopes' management. Both are list
+of atom scopes and will be use as regex. To be highlighted, a text must be matched by at least one regex in the 
+*Included Scopes* list and none of the *Excluded Scopes* list.
+
+By default, the package is configured to highlight correctly latex files and comments in other languages.
+
 ## ToDO:
 
 * Optimization?
-* Take in account the file type (do not correct some givens file types)
 * On/Off toggle
