@@ -9,6 +9,12 @@ This atom plugin highlights the syntax and spell mistakes in your editor.
 * Highlight mistakes
 * Suggest replacing text
 * Highlight only text in specific scopes (see [here](#scopes))
+* By default,  highlight correctly latex files and comments in other languages
+
+## LaTeX
+
+It's advised to separate different blocks (paragraph, section, ...) with new lines to reduce the number of mistakes not 
+highlighted. 
 
 ## Correcter modules
 
